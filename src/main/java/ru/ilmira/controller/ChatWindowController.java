@@ -9,13 +9,13 @@ public class ChatWindowController {
     @FXML
     private TextArea messageTA;
     @FXML
-    private TextField messageTF;
+    private TextField inputTF;
 
     @FXML
     private void sendMessage(ActionEvent event) {
-        messageTF.requestFocus();
-        if (messageTF.getText().isEmpty()) return;
-        messageTA.appendText(messageTF.getText() + "\n");
-        messageTF.clear();
+        inputTF.requestFocus();
+        if (inputTF.getText().isEmpty()) return;
+        messageTA.appendText(inputTF.getText() + "\n");
+        inputTF.clear();
     }
 }
